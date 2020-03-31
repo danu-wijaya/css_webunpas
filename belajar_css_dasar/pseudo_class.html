@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+
+        /* ========== PSEUDO CLASS UNTUK LINK ===========*/
+
+        /* Pseudo class default untuk link */
+        .hello {
+            color: #e70e8d;
+        }
+
+        /* Pseudo class default untuk link hover*/
+        .hello:hover {
+            font-family: Arial;
+            font-size: 20px;
+            color: green;
+        }
+
+        /* Pseudo class default untuk link active*/
+        .hello:active {
+            color: red;
+        }
+
+        /* Pseudo class default untuk link visited*/
+        .hello:visited {
+            color: sienna;
+        }
+
+        /* ========== PSEUDO CLASS UNTUK ELEMENT ===========*/
+
+        /* Pseudo class untuk mencari element pertama dari sebuah parent */
+        li:first-child a{
+            color: yellow;
+        }
+
+        /* Pseudo class untuk mencari element terakhir dari sebuah parent */
+        li:last-child a{
+            color: green;
+        }
+
+        /* Pseudo class untuk mencari element keberapa dari sebuah parent */
+        li:nth-child(2) a{
+            color: orangered;
+        }
+
+        /* Pseudo class untuk mencari element keberapa dari sebuah parent dan memberlakukan untuk kelipatan ataupun pola
+        -2n , 3n+2 , 4n-1, even, odd
+        */
+        li:nth-child(3n) a{
+            font-size: 20px;
+        }
+
+        /* Pseudo class untuk mencari element pertama dari tanpa parent*/
+        p:first-of-type {
+            color: blue;
+        }
+
+        /* Pseudo class untuk mencari element terakhir dari tanpa parent*/
+        p:last-of-type {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#" class="hello">Hello World</a>
+
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+        <li><a href="#">Link 7</a></li>
+        <li><a href="#">Link 8</a></li>
+        <li><a href="#">Link 9</a></li>
+        <li><a href="#">Link 10</a></li>        
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus vero reprehenderit facere, autem, omnis distinctio dolorum impedit, possimus nesciunt enim ipsum odio quasi aperiam assumenda sequi porro corporis dignissimos nam?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium provident error dolor animi tempora rerum ut magnam eveniet quis pariatur, asperiores maxime quam veniam quibusdam nulla nisi modi sed iure.</p>
+</body>
+</html>
